@@ -5,7 +5,7 @@ export interface StatBlock {
     int: number;
     wis: number;
     cha: number;
-}
+};
 
 
 export interface Adventurer {
@@ -13,7 +13,6 @@ export interface Adventurer {
     race: string;
     class: string;
     background: string;
-    stats: StatBlock;
+    //stats: StatBlock;
 
-    }
-}
+};

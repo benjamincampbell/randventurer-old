@@ -37,7 +37,7 @@ export const races = [
             str: 2,
             con: 1,
         }
-    }
+    },
     {
         name: 'Halfling',
         stats: {
@@ -61,4 +61,4 @@ export const races = [
             cha: 2,
         }
     },
-]
+];
