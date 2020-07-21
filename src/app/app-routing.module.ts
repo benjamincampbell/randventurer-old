@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GeneratorComponent } from './generator/generator.component';
+import { AdventurerViewComponent } from './adventurer-view/adventurer-view.component'
 
 const routes: Routes = [
-    { path: '', component: GeneratorComponent },
+    { path: '', component: AdventurerViewComponent },
 ];
 
 @NgModule({

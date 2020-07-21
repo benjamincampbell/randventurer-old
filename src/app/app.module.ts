@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GeneratorComponent } from './generator/generator.component';
+import { AdventurerViewComponent } from './adventurer-view/adventurer-view.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GeneratorComponent
+    AdventurerViewComponent,
+    TopBarComponent
   ],
   imports: [
     BrowserModule,

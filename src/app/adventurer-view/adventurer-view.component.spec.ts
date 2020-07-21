@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GeneratorComponent } from './generator.component';
+import { AdventurerViewComponent } from './adventurer-view.component';
 
-describe('GeneratorComponent', () => {
-  let component: GeneratorComponent;
-  let fixture: ComponentFixture<GeneratorComponent>;
+describe('AdventurerViewComponent', () => {
+  let component: AdventurerViewComponent;
+  let fixture: ComponentFixture<AdventurerViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GeneratorComponent ]
+      declarations: [ AdventurerViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GeneratorComponent);
+    fixture = TestBed.createComponent(AdventurerViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
