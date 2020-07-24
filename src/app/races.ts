@@ -1,64 +1,111 @@
 export const races = [
     {
         name: 'Dragonborn',
-        stats: {
-            str: 2,
-            cha: 1,
-        }
+        stats: [
+            {
+                name: 'str',
+                plus: 2
+            },
+            {
+                name: 'cha',
+                plus: 1,
+            }
+        ]
     },
     {
         name: 'Dwarf',
-        stats: {
-            con: 2,
-        }
+        stats: [
+            {
+                name: 'con',
+                plus: 2,
+            }
+        ]
     },
     {
         name: 'Elf',
-        stats: {
-            dex: 2,
-        }
+        stats: [
+            {
+                name: 'dex',
+                plus: 2,
+            }
+        ]
     },
     {
         name: 'Gnome',
-        stats: {
-            int: 2,
-        }
+        stats: [
+            {
+                name: 'int',
+                plus: 2,
+            }
+        ]
     },
     {
         name: 'Half-Elf',
-        stats: {
-            cha: 2,
-            other: 2,
-        }
+        stats: [
+            {
+                name: 'cha',
+                plus: 2,
+            },
+        ]
     },
     {
         name: 'Half-Orc',
-        stats: {
-            str: 2,
-            con: 1,
-        }
+        stats: [
+            {
+                name: 'str',
+                plus: 2,
+            },
+            {
+                name: 'con',
+                plus: 1,
+            }
+        ]
     },
     {
         name: 'Halfling',
-        stats: {
-            dex: 2,
-        }
+        stats: [
+            {
+                name: 'dex',
+                plus: 2,
+            }
+        ]
     },
     {
         name: 'Human',
-        stats: {
-            str: 1,
-            dex: 1,
-            con: 1,
-            int: 1,
-            wis: 1,
-            cha: 1,
-        }
+        stats: [
+            {
+                name: 'str',
+                plus: 1,
+            },
+            {
+                name: 'dex',
+                plus: 1,
+            },
+            {
+                name: 'con',
+                plus: 1,
+            },
+            {
+                name: 'int',
+                plus: 1,
+            },
+            {
+                name: 'wis',
+                plus: 1,
+            },
+            {
+                name: 'cha',
+                plus: 1,
+            }
+        ]
     },
     {
         name: 'Tiefling',
-        stats: {
-            cha: 2,
-        }
+        stats: [
+            {
+                name: 'cha',
+                plus: 2,
+            }
+        ]
     },
 ];
