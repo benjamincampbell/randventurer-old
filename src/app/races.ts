@@ -3,11 +3,11 @@ export const races = [
         name: 'Dragonborn',
         stats: [
             {
-                name: 'str',
+                name: 'Strength',
                 plus: 2
             },
             {
-                name: 'cha',
+                name: 'Charisma',
                 plus: 1,
             }
         ]
@@ -16,7 +16,7 @@ export const races = [
         name: 'Dwarf',
         stats: [
             {
-                name: 'con',
+                name: 'Constitution',
                 plus: 2,
             }
         ]
@@ -25,7 +25,7 @@ export const races = [
         name: 'Elf',
         stats: [
             {
-                name: 'dex',
+                name: 'Dexterity',
                 plus: 2,
             }
         ]
@@ -34,7 +34,7 @@ export const races = [
         name: 'Gnome',
         stats: [
             {
-                name: 'int',
+                name: 'Intelligence',
                 plus: 2,
             }
         ]
@@ -43,7 +43,7 @@ export const races = [
         name: 'Half-Elf',
         stats: [
             {
-                name: 'cha',
+                name: 'Charisma',
                 plus: 2,
             },
         ]
@@ -52,11 +52,11 @@ export const races = [
         name: 'Half-Orc',
         stats: [
             {
-                name: 'str',
+                name: 'Strength',
                 plus: 2,
             },
             {
-                name: 'con',
+                name: 'Constitution',
                 plus: 1,
             }
         ]
@@ -65,7 +65,7 @@ export const races = [
         name: 'Halfling',
         stats: [
             {
-                name: 'dex',
+                name: 'Dexterity',
                 plus: 2,
             }
         ]
@@ -74,27 +74,27 @@ export const races = [
         name: 'Human',
         stats: [
             {
-                name: 'str',
+                name: 'Strength',
                 plus: 1,
             },
             {
-                name: 'dex',
+                name: 'Dexterity',
                 plus: 1,
             },
             {
-                name: 'con',
+                name: 'Constitution',
                 plus: 1,
             },
             {
-                name: 'int',
+                name: 'Intelligence',
                 plus: 1,
             },
             {
-                name: 'wis',
+                name: 'Wisdom',
                 plus: 1,
             },
             {
-                name: 'cha',
+                name: 'Charisma',
                 plus: 1,
             }
         ]
@@ -103,7 +103,7 @@ export const races = [
         name: 'Tiefling',
         stats: [
             {
-                name: 'cha',
+                name: 'Charisma',
                 plus: 2,
             }
         ]

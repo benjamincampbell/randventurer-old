@@ -3,6 +3,8 @@ import { Adventurer } from './adventurer';
 import { races } from './races';
 import { classes } from './classes';
 import { backgrounds } from './backgrounds';
+import { alignments } from './alignments';
+import { stats } from './stats';
 
 @Injectable({
   providedIn: 'root'
@@ -11,8 +13,10 @@ export class AdventurerGeneratorService {
     _race;
     _class;
     _background;
+    _alignments
     _adventurer;
     _stats;
+    _statlist; // slightly redundant, but to iterate through in HTML to reduce redundancy there
 
   constructor() { }
 
@@ -20,15 +24,36 @@ export class AdventurerGeneratorService {
       this._race = races[Math.floor(Math.random() * races.length)];
       this._class = classes[Math.floor(Math.random() * classes.length)];
       this._background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+      this._alignment = alignments[Math.floor(Math.random() * alignments.length)];
+      this._statlist = [];
       this._stats = this.generateStatblock();
 
-      this._adventurer = { name: "Ben",
+      this._adventurer = { name: "Namey McNameyface",
+                           info: [
+                               {
+                                   name: "race",
+                                   value: this._race,
+                               },
+                               {
+                                   name: "class",
+                                   value: this._class
+                               },
+                               {
+                                   name: "background",
+                                   value: this._background,
+                               },
+                               {
+                                   name: "alignment",
+                                   value: this._alignment
+                               },
+                           ],
                            race: this._race,
                            class: this._class,
                            background: this._background,
-                           stats: this._stats
+                           stats: this._stats,
+                           statlist: this._statlist
                        };
-      console.log("Adventurer created: " + this._adventurer );
+      console.log("Adventurer created: " + JSON.stringify(this._adventurer));
 
       return this._adventurer;
   }
@@ -36,12 +61,12 @@ export class AdventurerGeneratorService {
   generateStatblock(){
       // get initial stat block
       let block = {
-          str: this.generateStat(),
-          dex: this.generateStat(),
-          con: this.generateStat(),
-          int: this.generateStat(),
-          wis: this.generateStat(),
-          cha: this.generateStat(),
+          Strength: this.generateStat(),
+          Dexterity: this.generateStat(),
+          Constitution: this.generateStat(),
+          Intelligence: this.generateStat(),
+          Wisdom: this.generateStat(),
+          Charisma: this.generateStat(),
       };
 
       // increase stats by any racial bonuses
@@ -51,7 +76,7 @@ export class AdventurerGeneratorService {
 
       // Half-Elves can increase any other non-CHA stat by 1 twice, do so randomly
       if (this._race.name == 'Half-Elf') {
-          let otherstats = ['str', 'dex', 'con', 'int', 'wis'];
+          let otherstats = ['Strength', 'Dexterity', 'Constitution', 'Intelligence', 'Wisdom'];
           for (let i = 0; i < 2; i++) {
               let chosenstat = otherstats[Math.floor(Math.random() * otherstats.length)];
               console.log("Half-Elf random stat increase: " + chosenstat + " + 1");
@@ -59,10 +84,16 @@ export class AdventurerGeneratorService {
           }
       }
 
-      // calculate bonuses
+      // calculate bonuses, build statlist array
       for (let s in block){
           block[s].bonus = Math.floor((block[s].value - 10)/2);
+          let f = {};
+          f["name"] = s;
+          f["values"] = block[s];
+          this._statlist.push(f);
       }
+
+      console.log(JSON.stringify(block));
 
       return block;
   }

@@ -1,8 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
-.topbar {
-
-}
 
 html {
     background-color: black;
+}
+
+.appbody {
+
+}
+
+.charname {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 0px 10px 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.charinfo {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+.charinfo ul {
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.charinfo ul li {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 10px 0px 10px;
+}
+
+.infolabel {
+    font-size: 8pt;
+    text-transform: uppercase;
+}
+
+.infovalue {
+    font-size: 11spt;
+    border-bottom: 1px solid #ddd;
+}
+
+.statlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.statname {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.statlist li {
+    height: 80px;
+    width: 70px;
+    list-style-image: none;
+    display:block;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modifier {
+    background-color: white;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 30px;
+}
+
+.stats {
+    width: 100px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.statname {
+    margin: 0px 0px 5px 0px;
+}
+
+.statvalue {
+    font-size: 22pt;
 }
