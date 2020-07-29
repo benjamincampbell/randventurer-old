@@ -1,10 +1,10 @@
-<div class="appbody bg-light text-dark" *ngIf="adventurer">
+<div class="bg-light text-dark" *ngIf="adventurer">
     <div class="row">
-        <div class="charname">
+        <div class="charname col-md-4">
             <label class="infolabel">CHARACTER NAME</label>
             <div class="infovalue">{{ adventurer.name }}</div>
         </div>
-        <div class="charinfo">
+        <div class="charinfo col-md-8">
             <ul>
                 <li *ngFor="let i of adventurer.info">
                     <label class="infolabel">{{ i.name }}</label>
@@ -23,7 +23,7 @@
                             <div class="statvalue">{{ stat.values.value }}</div>
                         </div>
                         <div class="modifier">
-                            {{ stat.values.bonus }}
+                            {{ stat.values.bonus >= 0 ? '+' + stat.values.bonus : stat.values.bonus }}
                         </div>
                     </li>
                 </ul>
@@ -34,7 +34,6 @@
     </div>
 
 </div>
-
-<div class="row">
-    <button (click)="generateAdventurer()" type="button" name="generate">Generate Adventurer</button>
+<div class="row justify-content-center">
+        <button (click)="generateAdventurer()" type="button" name="generate">Generate Adventurer</button>
 </div>

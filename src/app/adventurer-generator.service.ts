@@ -13,10 +13,10 @@ export class AdventurerGeneratorService {
     _race;
     _class;
     _background;
-    _alignments
-    _adventurer;
-    _stats;
+    _alignment;
     _statlist; // slightly redundant, but to iterate through in HTML to reduce redundancy there
+    _stats;
+    _adventurer;
 
   constructor() { }
 
