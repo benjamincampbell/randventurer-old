@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-4">
+        <div class="col-4 sectone">
             <div class="stats">
                 <ul class="statlist">
                     <li *ngFor="let stat of adventurer.statlist">
@@ -27,6 +27,26 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+            <div class="statapps">
+                <div class="inspiration">
+                    <div class="singlevalue"></div>
+                    <label class="singlelabel">INSPIRATION</label>
+                </div>
+                <div class="proficiency">
+                    <div class="singlevalue"></div>
+                    <label class="singlelabel">PROFICIENCY BONUS</label>
+                </div>
+                <div class="savingthrows">
+                  <li *ngFor="let savingthrow of adventurer.savingthrows">
+                    <label>{{savingthrow.name}}</label>
+                  </li>
+                </div>
+                <div class="skills">
+                  <li *ngFor="let skill of adventurer.skills">
+                    <label>{{skill.name}}</label>
+                  </li>
+                </div>
             </div>
         </div>
         <div class="col-8">

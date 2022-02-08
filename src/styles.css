@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html {
-    
+
 }
 
 .appbody {
@@ -49,8 +49,15 @@ html {
 }
 
 .infovalue {
-    font-size: 11spt;
+    font-size: 11pt;
     border-bottom: 1px solid #ddd;
+}
+
+.sectone {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0 !important;
 }
 
 .statlist {
@@ -97,10 +104,46 @@ html {
     padding: 10px;
 }
 
+/* .statapps {
+  width: 100px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+} */
+
 .statname {
     margin: 0px 0px 0px 0px;
 }
 
 .statvalue {
     font-size: 22pt;
+}
+
+.singlevalue {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.singlelabel {
+    border: 1px solid black;
+    border-left: 0px;
+    font-size: 6pt;
+    width: 100%;
+    margin-top: 10px;
+    height: 18px;
+    text-align: center;
+}
+
+.inspiration, .proficiency {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+}
+
+.savingthrows {
+    border: 1px solid black;
+    border-radius: 10px;
 }

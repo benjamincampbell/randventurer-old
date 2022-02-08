@@ -3,7 +3,7 @@ export const stats = [
         name: 'Strength',
         abbr: 'STR',
         skills: [
-            'athletics',
+            'Athletics',
         ]
     },
     {

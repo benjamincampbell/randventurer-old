@@ -2,6 +2,9 @@ export const classes = [
     {
         name: 'Barbarian',
         hitdie: 12,
+        saves: [
+            'str'
+        ]
     },
     {
         name: 'Bard',
