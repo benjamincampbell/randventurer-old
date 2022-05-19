@@ -29,27 +29,12 @@ export class AdventurerGeneratorService {
       this._stats = this.generateStatblock();
 
       this._adventurer = { name: "Namey McNameyface",
-                           info: [
-                               {
-                                   name: "race",
-                                   value: this._race,
-                               },
-                               {
-                                   name: "class",
-                                   value: this._class
-                               },
-                               {
-                                   name: "background",
-                                   value: this._background,
-                               },
-                               {
-                                   name: "alignment",
-                                   value: this._alignment
-                               },
-                           ],
-                           race: this._race,
                            class: this._class,
                            background: this._background,
+                           playername: "",
+                           race: this._race,
+                           alignment: this._alignment,
+                           experience: "0",
                            stats: this._stats,
                            statlist: this._statlist
                        };
