@@ -1,4 +1,4 @@
-<div class="bg-light text-dark" *ngIf="adventurer">
+<div class="bg-white text-dark adventurer" *ngIf="adventurer">
     <div class="row">
         <div class="charname col-md-4">
             <label class="infolabel">CHARACTER NAME</label>
@@ -6,9 +6,33 @@
         </div>
         <div class="charinfo col-md-8">
             <ul>
-                <li *ngFor="let i of adventurer.info">
+                <!-- <li *ngFor="let i of adventurer.info">
                     <label class="infolabel">{{ i.name }}</label>
                     <div class="infovalue">{{ i.value.name }}</div>
+                </li> -->
+                <li>
+                  <label class="infolabel">CLASS</label>
+                  <div class="infovalue">{{adventurer.class.name}}</div>
+                </li>
+                <li>
+                  <label class="infolabel">BACKGROUND</label>
+                  <div class="infovalue">{{adventurer.background.name}}</div>
+                </li>
+                <li>
+                  <label class="infolabel">PLAYER NAME</label>
+                  <div class="infovalue"></div>
+                </li>
+                <li>
+                  <label class="infolabel">RACE</label>
+                  <div class="infovalue">{{adventurer.race.name}}</div>
+                </li>
+                <li>
+                  <label class="infolabel">ALIGNMENT</label>
+                  <div class="infovalue">{{adventurer.alignment.name}}</div>
+                </li>
+                <li>
+                  <label class="infolabel">EXPERIENCE POINTS</label>
+                  <div class="infovalue"></div>
                 </li>
             </ul>
         </div>
@@ -41,15 +65,39 @@
                   <li *ngFor="let savingthrow of adventurer.savingthrows">
                     <label>{{savingthrow.name}}</label>
                   </li>
+                  <li>
+                    <label class="statappslabel">Strength</label>
+                    <input class="statappsinput" type="text">
+                    <input class="statappsinput" type="checkbox">
+                  </li>
+                  <li>
+                    <label class="statappslabel">Dexterity</label>
+                    <input class="statappsinput" type="text">
+                    <input class="statappsinput" type="checkbox">
+                  </li>
+                  <div class="statappslabel">SAVING THROWS</div>
                 </div>
                 <div class="skills">
                   <li *ngFor="let skill of adventurer.skills">
                     <label>{{skill.name}}</label>
                   </li>
+                  <li>
+                    <label class="statappslabel">Acrobatics</label>
+                    <input class="statappsinput" type="text">
+                    <input class="statappsinput" type="checkbox">
+                  </li>
+                  <li>
+                    <label class="statappslabel">Animal Handling</label>
+                    <input class="statappsinput" type="text">
+                    <input class="statappsinput" type="checkbox">
+                  </li>
+                  <div class="statappslabel">SKILLS</div>
                 </div>
             </div>
         </div>
-        <div class="col-8">
+        <div class="col-4">
+        </div>
+        <div class="col-4">
         </div>
     </div>
 

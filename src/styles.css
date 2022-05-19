@@ -9,6 +9,10 @@ html {
     width: 800px;
 }
 
+.adventurer {
+  margin: 10px 0px 0px 0px;
+}
+
 .compbody {
     max-width: 800px;
 }
@@ -27,12 +31,13 @@ html {
 .charinfo {
     border: 1px solid black;
     border-radius: 10px;
-    padding: 20px 0px 0px 0px;
-    margin: 5px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .charinfo ul {
-    padding: 0px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -40,7 +45,7 @@ html {
 .charinfo ul li {
     display: flex;
     flex-direction: column-reverse;
-    margin: 0px 10px 0px 10px;
+    width: 33.33333%;
 }
 
 .infolabel {
@@ -101,16 +106,8 @@ html {
     font-weight: bold;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
 }
-
-/* .statapps {
-  width: 100px;
-  font-weight: bold;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-} */
 
 .statname {
     margin: 0px 0px 0px 0px;
@@ -118,6 +115,30 @@ html {
 
 .statvalue {
     font-size: 22pt;
+}
+
+.statapps {
+  font-weight: bold;
+  padding: 10px;
+}
+
+.statappslabel {
+  font-size: 8pt;
+}
+
+.statappscheck {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  order: 1;
+}
+
+input, textarea {
+  width: 30px;
+  border: 0;
+  border-bottom: 1px solid;
 }
 
 .singlevalue {
@@ -140,10 +161,17 @@ html {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    width: 120px;
+    width: 100%;
 }
 
 .savingthrows {
     border: 1px solid black;
     border-radius: 10px;
+    list-style-type: none;
+}
+
+.skills {
+  border: 1px solid black;
+  border-radius: 10px;
+  list-style-type: none;
 }
